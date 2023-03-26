@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto;
+            width: 900px;
+            height: 500px;
+            margin: 10px;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+        
+         
+          
+        }
+      
+        .item1,.item2,.item3{
+            border: 1px solid black;
+            width: 300px;
+            height: 250px;
+            margin: 10px;
+        }
+       img{
+            width: 162px;
+        }
+        @media  only screen and (max-width: 1500px) {
+  .container {
+    display: grid;
+    width:700px;
+    height: 500px;
+    justify-content: center;
+    display: grid;
+
+    
+  }
+  .item3{
+    grid-area: 2/1/3/2;
+  }
+
+}
+@media  only screen and (max-width: 800px) {
+  .container {
+    display: grid;
+    width:400px;
+    height: 1000px;
+    justify-content: center;
+    
+  }
+  .item2{
+    grid-area: 2/1/3/2;
+  }
+  .item3{
+    grid-area:3/1/4/2
+  }
+}
+@media only screen and (max-width:500px){
+    .container{
+        display: grid;
+        width: 300px;
+    }
+    img{
+        width: 250px;
+        height: 150px;
+    }
+    .grid{
+        width: 250px;
+        height: 350px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+    /* img{
+        width: 250px;
+    } */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1 grid" >
+            <div class="divImage">
+                <img src="C:\Users\Orange\Desktop\responsive1.PNG">
+            </div>
+            <div class="text">
+                <p> Autem eum earum reiciendis quidem! Cum sequi illum eum placeat suscipit possimus, nemo, sint dignissimos, laboriosam laborum molestias veniam eos distinctio. Voluptates. </p>
+            </div>
+        </div>
+        <div class="item2 grid" >
+            <div class="divImage"><img src="C:\Users\Orange\Desktop\responsive2.PNG">
+        </div>
+        
+          <div class="text"><p> Veniam eum fuga facere. Ratione deleniti, corrupti dolore assumenda, autem corporis minima est numquam enim neque consequatur tenetur magni voluptas explicabo ea! </p>
+        </div>
+        </div>
+        <div class="item3 grid" >
+            <div class="divImage"><img src="C:\Users\Orange\Desktop\responsive3.PNG">
+        </div>
+        
+          <div class="text"><p> Earum, dicta error, odit nemo quisquam doloremque adipisci reiciendis ad nihil nesciunt tenetur rem beatae consectetur facilis esse minus eaque commodi exercitationem! </p>
+        </div>
+        </div>
+        
+    </div>   
+</body>
+</html>

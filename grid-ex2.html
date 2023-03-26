@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+.grid-container {
+  display: grid;
+  /* grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer'; */
+  gap: 10px;
+  row-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+
+grid-template-areas:
+   'header header header header'
+   'menu meny menu main '
+   'footer footer footer';
+}
+
+/* .grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+} */
+        .header{
+            background-color: black;
+            height: 70px;
+            grid-column: 1/5;
+            width: 1500px;
+        }
+        .menu{
+            background-color: orange;
+            height: 200px;
+            width: 900px;
+           
+         
+        }
+        .main{
+            background-color: rgb(8, 0, 255);
+            height: 200px;
+            width:550px;
+            column-gap: 10px;
+
+        }
+        
+        
+        .footer{
+            background-color: blue;
+            height: 120px;
+            grid-column: 1/5;
+            width: 1500px;
+        }
+        .margin{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item-grid header">1</div>
+       <div class="margin">
+        <div class="item-grid menu">2</div>
+        <div class="item-grid main">3</div>
+        </div>
+        <div class="item-grid footer">4</div>
+
+    </div>
+</body>
+</html>
